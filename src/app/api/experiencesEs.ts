@@ -2,7 +2,7 @@ export const experiencesEs = [
     {
         title: "Diseño de videojuego de sigilo",
         company: 'Otter Worlds Games',
-        period: "2021 - 2022 (1 año)",
+        period: "2021 - Actual (1 año)",
         technologies: 'Unreal Engine, Scrum, Perforce',
         missions: [
             "Diseño de niveles.",
@@ -15,7 +15,7 @@ export const experiencesEs = [
     {
         title: "Desarollador Móvil y Desarrollador Web fullstack",
         company: 'Armadillo Amarillo',
-        period: "2020 - 2021 (11 meses)",
+        period: "2020 - 2021",
         technologies: 'Angular, Vue, React, Nodejs, Scrum',
         missions: [
             "Responsable del equipo frontend de Armadillo Amarillo.",
@@ -40,6 +40,7 @@ export const experiencesEs = [
         period: "2019 (300h)",
         technologies: 'Vue, Javascript, Git, Java',
         missions: [
+            "Prácticas en empresa como desarrollador web fullstack.",
         ],
         detailIsDisplayed: false,
     },

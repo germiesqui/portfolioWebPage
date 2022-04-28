@@ -53,6 +53,7 @@ export const locale = {
             'bachelor': 'Ignacio Ellacuria, ES',
             'mission':'Mission',
             'technologies':'Technologies',
+            'openCV':'Open Curriculum',
             'detail':'Detail',
             'tripsCountries':'-',
             'boardGamesPlayed':'-',
@@ -68,12 +69,13 @@ export const locale = {
             'english': 'English',
         },
         'home': {
-            'iAmDeveloper': 'I am a',
+            'iAmDeveloper': 'I am a dseigner',
         },
         'projects': {
             'title': 'Portfolio',
             'projectDetail':'Project detail',
             'sourceCode':'Source code',
+            'technologiesTitle':'Technologies',
         },
         'references': {
             'title': 'References',
