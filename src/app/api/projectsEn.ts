@@ -23,7 +23,7 @@ export const projectsEn = [
         detailIsDisplayed: false,
     },
     {
-        id:"TsarsSecrets",
+        id:"tsarsSecrets",
         name: "Tsar's Secrets",
         technologies: 'Android Studio, Java, Rx_Java, Retrofit, MVP, Rest',
         images: [

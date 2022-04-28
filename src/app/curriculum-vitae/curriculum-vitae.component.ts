@@ -28,7 +28,7 @@ export class CurriculumVitaeComponent implements OnInit {
       }
       else{
         this.experiences=experiencesEs;
-        this.cvLink="/assets/CV_Game_Industry_2021.pdf";
+        this.cvLink="/assets/CV_GameDesign_2021.pdf";
       }
     });
   }
@@ -39,13 +39,9 @@ export class CurriculumVitaeComponent implements OnInit {
     this.volleyBallIcon=awesom.faVolleyballBall;
   }
   
-  detailOnClick(experience:any) {
+  detailOnClick(event:any, experience:any) {
     experience.detailIsDisplayed=!experience.detailIsDisplayed;
+    event.currentTarget.blur();
   }
-
-  openCVOnClick() {
-    
-  }
- 
 
 }

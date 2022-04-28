@@ -31,7 +31,7 @@
                         <em>{{experience.company}}</em>
                         <div class="d-flex flex-row">
                             <p class="year p-2 d-flex justify-content-center">{{experience.period}}</p>
-                            <button (click)="detailOnClick(experience)" type="button"
+                            <button (click)="detailOnClick($event, experience)" type="button"
                                 class="btn btn-primary">
                                 <span *ngIf="!experience.detailIsDisplayed">+</span><span *ngIf="experience.detailIsDisplayed">-</span> {{'education.detail' | translate}}</button>
                         </div>
@@ -87,7 +87,7 @@
                     <div class="container row CVbtnRowContainer">
                         <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                             <div class="noProgress">
-                                <a [href]="cvLink" target="_blank" type="button" class="btn btn-primary CVbtnLink"><strong>{{'education.openCV' | translate}}</strong></a>
+                                <a [href]="cvLink" target="_blank" type="button" class="btn btn-primary CVbtnLink">{{'education.openCV' | translate}}</a>
                             </div>
                         </div>
                     </div>

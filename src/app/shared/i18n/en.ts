@@ -69,7 +69,7 @@ export const locale = {
             'english': 'English',
         },
         'home': {
-            'iAmDeveloper': 'I am a dseigner',
+            'iAmDeveloper': 'I am a designer',
         },
         'projects': {
             'title': 'Portfolio',

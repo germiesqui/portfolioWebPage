@@ -32,38 +32,38 @@ export class ProjectsComponent implements OnInit {
 
   ngAfterViewInit(){
     console.log("after view init");
-    this.onMouse("portfolio-link", "portfolio-img");
-    this.onMouse("teamTraveler-link", "teamTraveler-img");
-    this.onMouse("mautic-link", "mautic-img");
-    this.onMouse("pokedex-link", "pokedex-img");
-    this.onMouse("riddle-link", "riddle-img");
+    this.onMouse("spiritCave-link", "spiritCave-img", "spiritCave");
+    this.onMouse("tsarsSecrets-link", "TsarsSecrets-img", "tsarsSecrets");
+    this.onMouse("armor-link", "armor-img", "armor");
     this.venobox = $('.venobox');
     this.venobox.venobox();
   }
 
-  detailOnClick(project: any) {
+  detailOnClick(event:any, project: any) {
     this.projects.filter(item=>item.detailIsDisplayed && item.id!=project.id).map(elem=>elem.detailIsDisplayed=false);
     project.detailIsDisplayed=!project.detailIsDisplayed;
+    event.currentTarget.blur();
   }
 
-  onMouse(idLink: String, idImage: String) {
-    $('#' + idLink).on("mouseenter", function () {
-      console.log('on mouseenter');
-      $('#' + idImage).css("opacity", "0.3");
-      $('#' + idLink).css("opacity", "1");
-    }).on('mouseleave', function () {
-      $('#' + idImage).css("opacity", "1");
-      $('#' + idLink).css("opacity", "0");
-    }
-    );
+  onMouse(idLink: String, idImage: String, id: String) {
 
-    $('#' + idImage).on("mouseenter", function () {
-      $('#' + idImage).css("opacity", "0.3");
-      $('#' + idLink).css("opacity", "1");
-    }).on('mouseleave', function () {
-      $('#' + idImage).css("opacity", "1");
-      $('#' + idLink).css("opacity", "0");
-    }
-    );
+      $('#' + idLink).on("mouseenter", function () {
+        $('#' + idImage).css("opacity", "0.3");
+        $('#' + idLink).css("opacity", "1");
+      }).on('mouseleave', function () {
+        $('#' + idImage).css("opacity", "1");
+        $('#' + idLink).css("opacity", "0");
+      }
+      );
+  
+      $('#' + idImage).on("mouseenter", function () {
+        $('#' + idImage).css("opacity", "0.3");
+        $('#' + idLink).css("opacity", "1");
+      }).on('mouseleave', function () {
+        $('#' + idImage).css("opacity", "1");
+        $('#' + idLink).css("opacity", "0");
+      }
+      );
+    
   }
 }
