@@ -34,4 +34,7 @@ li.active{
   height: 600px;
 }
 
+.italics{
+  font-style: italic;
+}
 

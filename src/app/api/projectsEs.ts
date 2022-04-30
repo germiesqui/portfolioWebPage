@@ -10,16 +10,16 @@ export const projectsEs = [
             },
             {
                 title:'',
-                src:"assets/images/voyage.webp",
+                src:"assets/images/SpiritCave2.jpg",
             },
             {
                 title:'',
-                src: "assets/images/logements.webp",
+                src: "assets/images/SpiritCave3.jpg",
             },
         ],
-        url: "https://play.google.com/store/apps/details?id=team.traveler.teamtraveler",
-        detail:"L'application vous permettra d'organiser des voyage en groupe facilement et rapidement. Votez pour les dates, les transports, hébergement ou même les activités. Grâce à cette <a title='Télécharger sur Google Play' href='https://play.google.com/store/apps/details?id=team.traveler.teamtraveler'>application</a> plus de problème de choix ou désaccords.",
-        codeSourceUrl:'https://github.com/zinedineBenkhider/team_traveler',
+        url: "https://germiesqui.itch.io/spirit-cave",
+        detail:"<p>Juego desarrollado para la GGJ 2022.</p><p class='italics'>Has sido maldecido y encerrado en las profundidades de la Cueva de los Lamentos. Gracias a la maldicion puedes escapar de tu forma terrenal y liberar tu alma. Ahora debes escapar.</p>",
+        codeSourceUrl:'https://germiesqui.itch.io/spirit-cave',
         detailIsDisplayed: false,
     },
     {
