@@ -1,6 +1,6 @@
 export const experiencesEn = [
     {
-        title: "Game design of a Stealth Game",
+        title: "Game design in a Stealth Game",
         company: 'Otter Worlds Games',
         period: "2021 - Today (1 year)",
         technologies: 'Unreal Engine, Scrum, Perforce',

@@ -5,72 +5,88 @@ export const projectsEs = [
         technologies: 'Unreal Engine 4',
         images: [
             {
-                title:'',
-                src: "assets/images/SpiritCaveMain.png",
+                title:'Main Page',
+                src: "assets/images/SpiritCave_MainPage.png",
             },
             {
-                title:'',
-                src:"assets/images/SpiritCave2.jpg",
+                title:'Screenshot Personaje Fantasma',
+                src:"assets/images/SpiritCave_2.jpg",
             },
             {
-                title:'',
-                src: "assets/images/SpiritCave3.jpg",
+                title:'Screenshot Personaje',
+                src: "assets/images/SpiritCave_3.jpg",
             },
         ],
         url: "https://germiesqui.itch.io/spirit-cave",
-        detail:"<p>Juego desarrollado para la GGJ 2022.</p><p class='italics'>Has sido maldecido y encerrado en las profundidades de la Cueva de los Lamentos. Gracias a la maldicion puedes escapar de tu forma terrenal y liberar tu alma. Ahora debes escapar.</p>",
+        detail:
+        `
+            <p>Juego desarrollado para la GGJ 2022.</p>
+            <p class="italic">"Has sido maldecido y encerrado en las profundidades de la Cueva de los Lamentos. Gracias a la maldición puedes escapar de tu forma terrenal y liberar tu alma. Ahora debes escapar."</p>
+            <img src="assets/images/SpiritCave_3.jpg" alt="Screenshot del personaje" class="projectImgDetails">
+            <p>La temática de la Game Jam era <span class="bold">dualidad</span>. Nos decantamos por usar una mezcla entre narrativa y mecánicas para representar esta idea. 
+            En el juego controlamos a nuestro protagonista, el cual solo puede caminar hacia adelante y hacia atrás. Para poder sortear los obstáculos del mapa, como son las diferencias de nivel, saltos y enemigos, 
+            tiene la habilidad de transformarse en un fantasma. 
+            Esta habilidad invierte el eje de gravedad y le permite caminar por el techo o, con suficiente habilidad, volar por algunas zonas.</p>
+            <img src="assets/images/SpiritCave_TileMap.jpg" alt="vista en desarrollo del TileMap" class="projectImgDetails">
+            <p>Como tecnología escogimos UE4 dado que era el único motor que controlabamos todos los integrantes del grupo. Además, lo usamos para aprender a manejar los mapas y elementos en 2D de unreal usando TileMaps.</p>
+            <img src="assets/images/SpiritCave_2.jpg" alt="Screenshot del personaje fantasma" class="projectImgDetails">
+            <p>Uno de los mayores retos que afrontamos desde el lado del diseño y la programción fue que, por limitaciones del motor, al invertir el eje de gravedad unreal no detecta que dejas de "caer" 
+            hacia arriba cuando llegas al techo, por lo que andar se hacía imposible dado que no habia rozamiento con el suelo (techo). 
+            Al final, pudimos solventarlo lanzando un rayo que chocase contra el techo, midiendo la distancia de dicho rayo y, en base a eso, determinar nosotros si habia dejado de caer o no y reprogramar todo el movimiento lateral 
+            del techo para que funcione acorde a lo programado.</p>
+        `,
         codeSourceUrl:'https://germiesqui.itch.io/spirit-cave',
         detailIsDisplayed: false,
     },
     {
         id:"tsarsSecrets",
         name: "Tsar's Secrets",
-        technologies: 'Android Studio, Java, Rx_Java, Retrofit, MVP, Rest',
+        technologies: 'Unreal Engine 4, Perforce',
         images: [
             {
-                title:'Compagnes de marketing',
-                src:   "assets/images/compagnes.jpg",
-            },
-            {
-                title:'Détail de la compagne',
-                src :"assets/images/compagne-detail.jpg",
-            },
-            {
-                title:"Performance d'un émail",
-                src: "assets/images/email-detail.jpg",
-            },
-            {
-                title:"Performance d'un Asset",
-                src: "assets/images/asset-detail.jpg" 
+                title:"Tsar's Secrets Main Page",
+                src:   "assets/images/TsarSecrets_MainPage.jpg",
             },
             
         ],
         url:'#portfolio',
-        detail:"<p>Mautic est un outil open source de marketing automatique</p> <p>L'application permet d'avoir des rapports dynamiques et détaillés, d’analyser les tendances individuels des campagnes.<br> Un tableau de bord visuellement convivial vous donne un point de vue rapide unique sur la performance de: vos campagnes numériques, assets, et formulaires. </p> <p>L'application est disponible en Français et en Anglais.</p>",
-        codeSourceUrl:'https://github.com/zinedineBenkhider/mautic_monitoring',
+        detail:
+        `
+        WIP
+        `,
+        codeSourceUrl:'-',
         detailIsDisplayed: false,
     },
     {
         id:"armor",
         name: "Armadura de cuero",
-        technologies: '',
+        technologies: 'Marroquinería',
         images: [
             {
-                title:'Pokedex',
-                src:   "assets/images/pokedex.png",
+                title:'Casco',
+                src:   "assets/images/Armor_MainPage.jpg",
             },
             {
-                title:'Trainers',
-                src :"assets/images/trainers.png",
+                title:'Mandubula Retraible',
+                src :"assets/images/Armor_2.jpg",
             },
             {
-                title:"Profile",
-                src: "assets/images/profile-trainer.png",
+                title:"Brazaletes",
+                src: "assets/images/Armor_3.jpg",
             },            
         ],
         url:'#portfolio',
-        detail:"<p>Affichage du détail des pokémons et de leurs drésseurs.</p> <p>L'application contient deux micro-service: pokemon management et trainer management, qui exposent un canal de communication REST/JSON.<br>Le 3éme micro-service WEB-UI se connecte aux deux micro-service.</p><p>Affichage du détail des pokémons et de leurs drésseurs.</p> <p>L'application contient deux micro-service: pokemon management et trainer management, qui exposent un canal de communication REST/JSON.<br>Le 3éme micro-service WEB-UI se connecte aux deux micro-service.</p><p>Affichage du détail des pokémons et de leurs drésseurs.</p> <p>L'application contient deux micro-service: pokemon management et trainer management, qui exposent un canal de communication REST/JSON.<br>Le 3éme micro-service WEB-UI se connecte aux deux micro-service.</p><p>Affichage du détail des pokémons et de leurs drésseurs.</p> <p>L'application contient deux micro-service: pokemon management et trainer management, qui exposent un canal de communication REST/JSON.<br>Le 3éme micro-service WEB-UI se connecte aux deux micro-service.</p><p>Affichage du détail des pokémons et de leurs drésseurs.</p> <p>L'application contient deux micro-service: pokemon management et trainer management, qui exposent un canal de communication REST/JSON.<br>Le 3éme micro-service WEB-UI se connecte aux deux micro-service.</p><p>Affichage du détail des pokémons et de leurs drésseurs.</p> <p>L'application contient deux micro-service: pokemon management et trainer management, qui exposent un canal de communication REST/JSON.<br>Le 3éme micro-service WEB-UI se connecte aux deux micro-service.</p><p>Affichage du détail des pokémons et de leurs drésseurs.</p> <p>L'application contient deux micro-service: pokemon management et trainer management, qui exposent un canal de communication REST/JSON.<br>Le 3éme micro-service WEB-UI se connecte aux deux micro-service.</p><p>Affichage du détail des pokémons et de leurs drésseurs.</p> <p>L'application contient deux micro-service: pokemon management et trainer management, qui exposent un canal de communication REST/JSON.<br>Le 3éme micro-service WEB-UI se connecte aux deux micro-service.</p><p>Affichage du détail des pokémons et de leurs drésseurs.</p> <p>L'application contient deux micro-service: pokemon management et trainer management, qui exposent un canal de communication REST/JSON.<br>Le 3éme micro-service WEB-UI se connecte aux deux micro-service.</p>",
-        codeSourceUrl:'https://github.com/ifi-2019/trainer-ui-zinedineBenkhider',
+        detail:
+        `
+            <p>El proyecto consiste en crear una armadura de cuero de tamaño real inspirado en el dragón <span class="bold">Rathalos<span> de la saga Monster Hunter.</p>
+            <img src="assets/images/Armor_Rathalos.jpg" alt="Rathalos" class="projectImgDetails">
+            <p>Para ello, partiendo de un trozo de cuero de vaca curtido, he recortado cada pieza siguiendo unos patrones, le he dado forma, he trazado el dibujo interno de cada pieza, lo he tintado y por último lo he montado con remaches.</p>
+            <img src="assets/images/Armor_Leather.jpg" alt="Cuero de vaca" class="projectImgDetails">
+            <img src="assets/images/Armor_Pieces.jpg" alt="Partes del casco" class="projectImgDetails">
+            Además del casco, he hecho 2 brazaletes para acompañar el conjunto. La próxima pieza seran las hombreras.          
+            <img src="assets/images/Armor_3.jpg" alt="Brazaletes" class="projectImgDetails">
+        `,
+        codeSourceUrl:'-',
         detailIsDisplayed: false,
     },
 ];

@@ -34,7 +34,16 @@ li.active{
   height: 600px;
 }
 
-.italics{
+.italic {
   font-style: italic;
+}
+
+.bold {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.projectImgDetails {
+  padding: 10px;
 }
 

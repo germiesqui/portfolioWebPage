@@ -5,72 +5,88 @@ export const projectsEn = [
         technologies: 'Unreal Engine 4',
         images: [
             {
-                title:'',
-                src: "assets/images/SpiritCaveMain.png",
+                title:'Main Page',
+                src: "assets/images/SpiritCave_MainPage.png",
             },
             {
-                title:'',
-                src:"assets/images/voyage.webp",
+                title:'Screenshot Ghost Form',
+                src:"assets/images/SpiritCave_2.jpg",
             },
             {
-                title:'',
-                src: "assets/images/logements.webp",
+                title:'Screenshot Protagonist',
+                src: "assets/images/SpiritCave_3.jpg",
             },
         ],
-        url: "https://play.google.com/store/apps/details?id=team.traveler.teamtraveler",
-        detail:"L'application vous permettra d'organiser des voyage en groupe facilement et rapidement. Votez pour les dates, les transports, hébergement ou même les activités. Grâce à cette <a title='Télécharger sur Google Play' href='https://play.google.com/store/apps/details?id=team.traveler.teamtraveler'>application</a> plus de problème de choix ou désaccords.",
-        codeSourceUrl:'https://github.com/zinedineBenkhider/team_traveler',
+        url: "https://germiesqui.itch.io/spirit-cave",
+        detail:
+        `
+            <p>Videogame developed in the Global Game Jam 2022.</p>
+            <p class="italic">"You have been cursed and locked in the depths of the Sorrow's Cave. You have the power of the curse that allows your souls to escape from your body and surpass mortal limits. Now you have to escape."</p>
+            <img src="assets/images/SpiritCave_3.jpg" alt="Protagonist Screenshot" class="projectImgDetails">
+            <p>The GameJam theme wahs <span class="bold">duality</span>. We chose to use a mix of narrative and mechanics to represent this idea. 
+            In the game we control our protagonist, who can only walk back and forth. In order to get around the obstacles on the map, such as level differences, jumps and enemies, he has the ability to transform into a ghost. 
+            This ability reverses the axis of gravity and allows him to walk on the ceiling or, with enough skill, fly through some areas.</p>
+            <img src="assets/images/SpiritCave_TileMap.jpg" alt="development view of TileMap" class="projectImgDetails">
+            <p>As technology we chose UE4 since it was the only engine that all the members of the group controlled. In addition, we used it to learn how to handle the maps and 2D elements of unreal using TileMaps.</p>
+            <img src="assets/images/SpiritCave_2.jpg" alt="ghost form Screenshot" class="projectImgDetails">
+            <p>One of the biggest challenges we faced from the design and programming side was that, due to engine limitations, when inverting the axis of gravity, unreal does not detect that, 
+            when you reach the ceiling, you stop "falling" upwards, so walking on the ceiling became impossible since there was no friction with the ground. 
+            In the end we were able to solve it by launching a RayCast that hit the ceiling, 
+            measuring the distance of the beam and based on that we determine if it had stopped falling or not and reprogram all the lateral movement the roof to work as programmed.</p>
+        `,
+        codeSourceUrl:'https://germiesqui.itch.io/spirit-cave',
         detailIsDisplayed: false,
     },
     {
         id:"tsarsSecrets",
         name: "Tsar's Secrets",
-        technologies: 'Android Studio, Java, Rx_Java, Retrofit, MVP, Rest',
+        technologies: 'Unreal Engine 4, Perforce',
         images: [
             {
-                title:'Compagnes de marketing',
-                src:   "assets/images/compagnes.jpg",
-            },
-            {
-                title:'Détail de la compagne',
-                src :"assets/images/compagne-detail.jpg",
-            },
-            {
-                title:"Performance d'un émail",
-                src: "assets/images/email-detail.jpg",
-            },
-            {
-                title:"Performance d'un Asset",
-                src: "assets/images/asset-detail.jpg" 
+                title:"Tsar's Secrets Main Page",
+                src:   "assets/images/TsarSecrets_MainPage.jpg",
             },
             
         ],
         url:'#portfolio',
-        detail:"<p>Mautic est un outil open source de marketing automatique</p> <p>L'application permet d'avoir des rapports dynamiques et détaillés, d’analyser les tendances individuels des campagnes.<br> Un tableau de bord visuellement convivial vous donne un point de vue rapide unique sur la performance de: vos campagnes numériques, assets, et formulaires. </p> <p>L'application est disponible en Français et en Anglais.</p>",
-        codeSourceUrl:'https://github.com/zinedineBenkhider/mautic_monitoring',
+        detail:
+        `
+        WIP
+        `,
+        codeSourceUrl:'-',
         detailIsDisplayed: false,
     },
     {
-        id:"Dnd",
-        name: "DnD Hombrew Content",
-        technologies: 'Java, J2EE, SpringBoot, TDD, MySQL, BootStrap, Services, Deploiment',
+        id:"armor",
+        name: "Armadura de cuero",
+        technologies: 'Marroquinería',
         images: [
             {
-                title:'Pokedex',
-                src:   "assets/images/pokedex.png",
+                title:'Helmet',
+                src:   "assets/images/Armor_MainPage.jpg",
             },
             {
-                title:'Trainers',
-                src :"assets/images/trainers.png",
+                title:'Retractable jaw',
+                src :"assets/images/Armor_2.jpg",
             },
             {
-                title:"Profile",
-                src: "assets/images/profile-trainer.png",
+                title:"Armbands",
+                src: "assets/images/Armor_3.jpg",
             },            
+        ],            
         ],
         url:'#portfolio',
-        detail:"<p>Affichage du détail des pokémons et de leurs drésseurs.</p> <p>L'application contient deux micro-service: pokemon management et trainer management, qui exposent un canal de communication REST/JSON.<br>Le 3éme micro-service WEB-UI se connecte aux deux micro-service.</p>",
-        codeSourceUrl:'https://github.com/ifi-2019/trainer-ui-zinedineBenkhider',
+        detail:
+        `
+            <p>The project consists of creating a life-size leather armor inspired in <span class="bold">Rathalos<span> creature from the Monster Hunter saga.</p>
+            <img src="assets/images/Armor_Rathalos.jpg" alt="Rathalos" class="projectImgDetails">
+            <p>To do this, starting from a piece of tanned leather, I cut out each piece following some patterns, gave it shape, traced the internal drawing of each piece, dyed it and finally assembled it with rivets.</p>
+            <img src="assets/images/Armor_Leather.jpg" alt="Tanned Leather" class="projectImgDetails">
+            <img src="assets/images/Armor_Pieces.jpg" alt="Helmet pieces" class="projectImgDetails">
+            In addition to the helmet, I have made 2 bracelets to go with it. The next piece will be the shoulder pads.       
+            <img src="assets/images/Armor_3.jpg" alt="Brazaletes" class="projectImgDetails">
+        `,
+        codeSourceUrl:'-',
         detailIsDisplayed: false,
     },
 ];

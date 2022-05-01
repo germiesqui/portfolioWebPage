@@ -12,7 +12,7 @@ import Typed from 'typed.js';
 })
 export class HomeComponent implements OnInit {
   options:any = {
-    strings: ['','De Niveles', 'De Sistemas', 'Técnico'],
+    strings: ['','Levels', 'Systems', 'Technical'],
     typeSpeed: 230,
     backSpeed: 230,
     loop: true,

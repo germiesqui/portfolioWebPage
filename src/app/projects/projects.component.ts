@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { TranslationLoaderService } from '../service/translation-loader.service';
 import { locale as english } from '../shared/i18n/en';
 import { locale as spanish } from '../shared/i18n/es';
@@ -9,7 +9,8 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: ['./projects.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ProjectsComponent implements OnInit {
   projects:any[]=projectsEs;

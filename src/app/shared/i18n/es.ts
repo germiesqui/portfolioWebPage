@@ -10,7 +10,7 @@ export const locale = {
             'years': '-',
             'graduation': "Master en diseño de videojuegos",
             'myResearch': '-',
-            'researchDescription': "Estoy buscando desarrollarme como diseñador de videojuegos.",
+            'researchDescription': "Estoy buscando crecer y desarrollarme como diseñador de videojuegos.",
             'and':'-',
             'followMeOn':'Sigueme en',
         },
@@ -70,7 +70,7 @@ export const locale = {
             
         },
         'home': {
-            'iAmDeveloper': 'Yo soy diseñador',
+            'iAmDeveloper': 'Yo soy game designer',
         },
         'projects': {
             'title': 'Proyectos',
