@@ -74,7 +74,6 @@ export const projectsEn = [
                 src: "assets/images/Armor_3.jpg",
             },            
         ],            
-        ],
         url:'#portfolio',
         detail:
         `
