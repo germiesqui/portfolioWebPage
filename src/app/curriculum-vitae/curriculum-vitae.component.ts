@@ -17,18 +17,18 @@ export class CurriculumVitaeComponent implements OnInit {
   planeIcon: any ;
   gameIcon:any;
   volleyBallIcon:any;
-  cvLink:any="/assets/CV_Game_Industry_2021.pdf";
+  cvLink:any="portfolioWebPage/assets/CV_Game_Industry_2021.pdf";
 
   constructor(private _translationLoaderService: TranslationLoaderService,private _translateService: TranslateService) {
     this._translationLoaderService.loadTranslations(english, spanish);
     this._translateService.onLangChange.subscribe(()=>{
       if(this._translateService.currentLang=="en"){
         this.experiences=experiencesEn;
-        this.cvLink="/assets/CV_GameDesign_2021__Ingles.pdf";
+        this.cvLink="portfolioWebPage/assets/CV_GameDesign_2021__Ingles.pdf";
       }
       else{
         this.experiences=experiencesEs;
-        this.cvLink="/assets/CV_GameDesign_2021.pdf";
+        this.cvLink="portfolioWebPage/assets/CV_GameDesign_2021.pdf";
       }
     });
   }
