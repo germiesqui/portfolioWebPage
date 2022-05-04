@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation} from '@angular/core';
+import { Component, HostListener, OnInit, ViewEncapsulation} from '@angular/core';
 import { TranslationLoaderService } from '../service/translation-loader.service';
 import { locale as english } from '../shared/i18n/en';
 import { locale as spanish } from '../shared/i18n/es';
@@ -76,13 +76,12 @@ export class ProjectsComponent implements OnInit, AfterViewInit, OnDestroy {
       );
     
   }
-  
-    onResize = (): void => {
-      // Automatically expand the video to fit the page up to 1200px x 720px
-      this.videoWidth = Math.min(this.myYouTubePlayer.nativeElement.clientWidth, 1200);
-      this.videoHeight = this.videoWidth * 0.6;
-      this._changeDetectorRef.detectChanges();
-    }
+
+  @HostListener('window:resize', ['$event']) onResize() {
+    this.videoWidth = Math.min(this.myYouTubePlayer.nativeElement.clientWidth, 1200);
+    this.videoHeight = this.videoWidth * 0.6;
+    this._changeDetectorRef.detectChanges();
+ }
   
     ngOnDestroy(): void {
       window.removeEventListener('resize', this.onResize);

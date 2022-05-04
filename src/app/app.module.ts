@@ -20,6 +20,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { YouTubePlayerModule } from "@angular/youtube-player";
+import { ReactiveFormsModule } from '@angular/forms';  
+import { HttpClientModule } from '@angular/common/http';
+import { ContactService } from './service/contact.service';
 
 @NgModule({
   declarations: [
@@ -46,10 +49,12 @@ import { YouTubePlayerModule } from "@angular/youtube-player";
     MatFormFieldModule,
     MatInputModule,
     YouTubePlayerModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     TranslateModule.forRoot(),
   ],
   providers: [
-   
+    ContactService
   ],
   bootstrap: [AppComponent]
 })
