@@ -18,6 +18,7 @@ export const projectsEn = [
             },
         ],
         url: "https://germiesqui.itch.io/spirit-cave",
+        videoId:"gpjd0Jl6Sik",
         detail:
         `
             <p>Videogame developed in the Global Game Jam 2022.</p>
@@ -49,6 +50,7 @@ export const projectsEn = [
             
         ],
         url:'#portfolio',
+        videoId:"-",
         detail:
         `
         WIP
@@ -75,6 +77,7 @@ export const projectsEn = [
             },            
         ],            
         url:'#portfolio',
+        videoId:"-",
         detail:
         `
             <p>The project consists of creating a life-size leather armor inspired in <span class="bold">Rathalos<span> creature from the Monster Hunter saga.</p>

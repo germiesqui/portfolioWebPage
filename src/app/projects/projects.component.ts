@@ -1,9 +1,10 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation} from '@angular/core';
 import { TranslationLoaderService } from '../service/translation-loader.service';
 import { locale as english } from '../shared/i18n/en';
 import { locale as spanish } from '../shared/i18n/es';
 import { projectsEn} from '../api/projectsEn';
 import { projectsEs} from '../api/projectsEs';
+import {AfterViewInit, ChangeDetectorRef, ElementRef, OnDestroy, ViewChild} from '@angular/core';
 
 import { TranslateService } from '@ngx-translate/core';
 @Component({
@@ -12,10 +13,15 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./projects.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent implements OnInit, AfterViewInit, OnDestroy {
   projects:any[]=projectsEs;
   venobox: any;
-  constructor(private _translationLoaderService: TranslationLoaderService,private _translateService: TranslateService) {
+
+  @ViewChild('myYouTubePlayer') myYouTubePlayer: ElementRef<HTMLDivElement>;
+  videoWidth: number | undefined;
+  videoHeight: number | undefined;
+
+  constructor(private _translationLoaderService: TranslationLoaderService,private _translateService: TranslateService, private _changeDetectorRef: ChangeDetectorRef) {
     this._translationLoaderService.loadTranslations(english, spanish);
     this._translateService.onLangChange.subscribe(()=>{
       if(this._translateService.currentLang=="en"){
@@ -38,6 +44,9 @@ export class ProjectsComponent implements OnInit {
     this.onMouse("armor-link", "armor-img", "armor");
     this.venobox = $('.venobox');
     this.venobox.venobox();
+
+    this.onResize();
+    window.addEventListener('resize', this.onResize);
   }
 
   detailOnClick(event:any, project: any) {
@@ -67,4 +76,15 @@ export class ProjectsComponent implements OnInit {
       );
     
   }
+  
+    onResize = (): void => {
+      // Automatically expand the video to fit the page up to 1200px x 720px
+      this.videoWidth = Math.min(this.myYouTubePlayer.nativeElement.clientWidth, 1200);
+      this.videoHeight = this.videoWidth * 0.6;
+      this._changeDetectorRef.detectChanges();
+    }
+  
+    ngOnDestroy(): void {
+      window.removeEventListener('resize', this.onResize);
+    }
 }

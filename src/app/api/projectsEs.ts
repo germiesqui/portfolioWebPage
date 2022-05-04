@@ -18,6 +18,7 @@ export const projectsEs = [
             },
         ],
         url: "https://germiesqui.itch.io/spirit-cave",
+        videoId:"gpjd0Jl6Sik",
         detail:
         `
             <p>Juego desarrollado para la GGJ 2022.</p>
@@ -50,6 +51,7 @@ export const projectsEs = [
             
         ],
         url:'#portfolio',
+        videoId:"-",
         detail:
         `
         WIP
@@ -76,6 +78,7 @@ export const projectsEs = [
             },            
         ],
         url:'#portfolio',
+        videoId:"-",
         detail:
         `
             <p>El proyecto consiste en crear una armadura de cuero de tamaño real inspirado en el dragón <span class="bold">Rathalos<span> de la saga Monster Hunter.</p>

@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { YouTubePlayerModule } from "@angular/youtube-player";
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { MatInputModule } from '@angular/material/input';
     MatSelectModule,
     MatFormFieldModule,
     MatInputModule,
+    YouTubePlayerModule,
     TranslateModule.forRoot(),
   ],
   providers: [
