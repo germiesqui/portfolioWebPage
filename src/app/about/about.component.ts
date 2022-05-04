@@ -19,6 +19,7 @@ export class AboutComponent implements OnInit {
   badge: any;
   home: any;
   itchio: any;
+  linkedinUrl: any = "https://www.linkedin.com/in/germ%C3%A1n-esquinazi-bachoer-5961541a3/";
   
   constructor(private _translationLoaderService: TranslationLoaderService) {
     this._translationLoaderService.loadTranslations(english, spanish);
