@@ -53,7 +53,7 @@ export const projectsEn = [
         videoId:"-",
         detail:
         `
-        <p>Visit the webpage https://otterworldsgames.itch.io/the-tsars-secret</p>
+        <p>Visit the webpage <strong><a href="https://otterworldsgames.itch.io/the-tsars-secret">https://otterworldsgames.itch.io/the-tsars-secret</a></strong></p>
         `,
         codeSourceUrl:'https://otterworldsgames.itch.io/the-tsars-secret',
         detailIsDisplayed: false,
