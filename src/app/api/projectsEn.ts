@@ -49,13 +49,13 @@ export const projectsEn = [
             },
             
         ],
-        url:'#portfolio',
+        url:'https://otterworldsgames.itch.io/the-tsars-secret',
         videoId:"-",
         detail:
         `
-        WIP
+        <p>Visit the webpage https://otterworldsgames.itch.io/the-tsars-secret</p>
         `,
-        codeSourceUrl:'-',
+        codeSourceUrl:'https://otterworldsgames.itch.io/the-tsars-secret',
         detailIsDisplayed: false,
     },
     {
