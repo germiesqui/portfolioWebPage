@@ -32,13 +32,13 @@ export class CurriculumVitaeComponent implements OnInit {
         this.experiences=experiencesEn;
         this.publications=publicationsEn;
         this.vgExperiences=vgExperiencesEn;
-        this.cvLink="https://germiesqui.github.io/portfolioWebPage/assets/CV_GameDesign_2021__Ingles.pdf";
+        this.cvLink="https://germiesqui.github.io/portfolioWebPage/assets/CV_GameDesign_2022_En.pdf";
       }
       else{
         this.experiences=experiencesEs;
         this.publications=publicationsEs;
         this.vgExperiences=vgExperiencesEs;
-        this.cvLink="https://germiesqui.github.io/portfolioWebPage/assets/CV_GameDesign_2021.pdf";
+        this.cvLink="https://germiesqui.github.io/portfolioWebPage/assets/CV_GameDesign_2022_Es.pdf";
       }
     });
   }
