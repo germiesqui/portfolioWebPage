@@ -3,7 +3,7 @@
         <h2><strong>{{'projects.title' | translate}} </strong></h2>
         <span class="bar-title mb-5"></span>
         <div class="row">
-            <div [ngClass]="{'col-lg-12': project.detailIsDisplayed, 'col-lg-4': !project.detailIsDisplayed}" class="col-sm-12 " data-aos="flip-up" *ngFor="let project of projects;">
+            <div [ngClass]="{'col-lg-12': project.detailIsDisplayed, 'col-lg-6': !project.detailIsDisplayed}" class="col-sm-12 " data-aos="flip-up" *ngFor="let project of projects;">
                 <div [ngClass]="{'cardCustom': !project.detailIsDisplayed}" class="card shadow-lg p-3 mb-5 bg-white rounded">
                     <div class="card-header d-flex flex-column" style="height: 300px;width: 100%; ">
                         <div id="{{project.id}}-img" class="img-wrap" style="height: 300px;width: 100%;  "
@@ -19,7 +19,7 @@
                     <div class="card-body">
                         <h3 class="card-title">{{project.name}}</h3>
                         <h5 class="card-title"><strong>{{'projects.technologiesTitle' | translate}}:</strong> </h5>
-                        <p class="card-text">{{project.technologies}}</p>
+                        <p class="card-text">{{project.functions}}</p>
                         <div class="d-flex flex-row justify-content-center">
                             <a href="{{project.codeSourceUrl}}" target="_blank" target="_blank"
                                 type="button" class="btn btn-primary mr-3">{{'projects.sourceCode' | translate}}</a>  

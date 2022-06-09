@@ -84,3 +84,9 @@ fa-icon{
 .CVbtnLink {
     width: 100%;
 }
+
+.englishTitle{
+    padding-left: 22px;
+    font-style: italic;
+    font-weight: 500;
+}

@@ -1,8 +1,28 @@
 export const projectsEn = [
     {
+        id:"tsarsSecrets",
+        name: "Tsar's Secrets",
+        functions: 'Level Designer, Gameplay Desgner, System Designer',
+        images: [
+            {
+                title:"Tsar's Secrets Main Page",
+                src:   "assets/images/TsarSecrets_MainPage.jpg",
+            },
+            
+        ],
+        url:'https://otterworldsgames.itch.io/the-tsars-secret',
+        videoId:"0Y3HglnHCvg",
+        detail:
+        `
+        <p>Visit our website in <strong><a href="https://otterworldsgames.itch.io/the-tsars-secret">https://otterworldsgames.itch.io/the-tsars-secret</a></strong></p>
+        `,
+        codeSourceUrl:'https://otterworldsgames.itch.io/the-tsars-secret',
+        detailIsDisplayed: false,
+    },
+    {
         id:"spiritCave",
         name: "Spirit Cave",
-        technologies: 'Unreal Engine 4',
+        functions: 'Level Designer, System Designer, QA',
         images: [
             {
                 title:'Main Page',
@@ -37,58 +57,5 @@ export const projectsEn = [
         `,
         codeSourceUrl:'https://germiesqui.itch.io/spirit-cave',
         detailIsDisplayed: false,
-    },
-    {
-        id:"tsarsSecrets",
-        name: "Tsar's Secrets",
-        technologies: 'Unreal Engine 4, Perforce',
-        images: [
-            {
-                title:"Tsar's Secrets Main Page",
-                src:   "assets/images/TsarSecrets_MainPage.jpg",
-            },
-            
-        ],
-        url:'https://otterworldsgames.itch.io/the-tsars-secret',
-        videoId:"-",
-        detail:
-        `
-        <p>Visit the webpage <strong><a href="https://otterworldsgames.itch.io/the-tsars-secret">https://otterworldsgames.itch.io/the-tsars-secret</a></strong></p>
-        `,
-        codeSourceUrl:'https://otterworldsgames.itch.io/the-tsars-secret',
-        detailIsDisplayed: false,
-    },
-    {
-        id:"armor",
-        name: "Armadura de cuero",
-        technologies: 'Marroquinería',
-        images: [
-            {
-                title:'Helmet',
-                src:   "assets/images/Armor_MainPage.jpg",
-            },
-            {
-                title:'Retractable jaw',
-                src :"assets/images/Armor_2.jpg",
-            },
-            {
-                title:"Armbands",
-                src: "assets/images/Armor_3.jpg",
-            },            
-        ],            
-        url:'#portfolio',
-        videoId:"-",
-        detail:
-        `
-            <p>The project consists of creating a life-size leather armor inspired in <span class="bold">Rathalos<span> creature from the Monster Hunter saga.</p>
-            <img src="assets/images/Armor_Rathalos.jpg" alt="Rathalos" class="projectImgDetails">
-            <p>To do this, starting from a piece of tanned leather, I cut out each piece following some patterns, gave it shape, traced the internal drawing of each piece, dyed it and finally assembled it with rivets.</p>
-            <img src="assets/images/Armor_Leather.jpg" alt="Tanned Leather" class="projectImgDetails">
-            <img src="assets/images/Armor_Pieces.jpg" alt="Helmet pieces" class="projectImgDetails">
-            In addition to the helmet, I have made 2 bracelets to go with it. The next piece will be the shoulder pads.       
-            <img src="assets/images/Armor_3.jpg" alt="Brazaletes" class="projectImgDetails">
-        `,
-        codeSourceUrl:'-',
-        detailIsDisplayed: false,
-    },
+    }
 ];

@@ -1,8 +1,28 @@
 export const projectsEs = [
     {
+        id:"tsarsSecrets",
+        name: "Tsar's Secrets",
+        functions: 'Level Designer, Gameplay Desgner, System Designer',
+        images: [
+            {
+                title:"Tsar's Secrets Main Page",
+                src:   "assets/images/TsarSecrets_MainPage.jpg",
+            },
+            
+        ],
+        url:'https://otterworldsgames.itch.io/the-tsars-secret',
+        videoId:"0Y3HglnHCvg",
+        detail:
+        `
+        <p>Vista nuestra pagina web en <strong><a href="https://otterworldsgames.itch.io/the-tsars-secret">https://otterworldsgames.itch.io/the-tsars-secret</a></strong></p>
+        `,
+        codeSourceUrl:'https://otterworldsgames.itch.io/the-tsars-secret',
+        detailIsDisplayed: false,
+    },
+    {
         id:"spiritCave",
         name: "Spirit Cave",
-        technologies: 'Unreal Engine 4',
+        functions: 'Level Designer, System Designer, QA',
         images: [
             {
                 title:'Main Page',
@@ -38,59 +58,6 @@ export const projectsEs = [
         `,
         codeSourceUrl:'https://germiesqui.itch.io/spirit-cave',
         detailIsDisplayed: false,
-    },
-    {
-        id:"tsarsSecrets",
-        name: "Tsar's Secrets",
-        technologies: 'Unreal Engine 4, Perforce',
-        images: [
-            {
-                title:"Tsar's Secrets Main Page",
-                src:   "assets/images/TsarSecrets_MainPage.jpg",
-            },
-            
-        ],
-        url:'https://otterworldsgames.itch.io/the-tsars-secret',
-        videoId:"-",
-        detail:
-        `
-        <p>Vista la pagina web en <strong><a href="https://otterworldsgames.itch.io/the-tsars-secret">https://otterworldsgames.itch.io/the-tsars-secret</a></strong></p>
-        `,
-        codeSourceUrl:'https://otterworldsgames.itch.io/the-tsars-secret',
-        detailIsDisplayed: false,
-    },
-    {
-        id:"armor",
-        name: "Armadura de cuero",
-        technologies: 'Marroquinería',
-        images: [
-            {
-                title:'Casco',
-                src:   "assets/images/Armor_MainPage.jpg",
-            },
-            {
-                title:'Mandubula Retraible',
-                src :"assets/images/Armor_2.jpg",
-            },
-            {
-                title:"Brazaletes",
-                src: "assets/images/Armor_3.jpg",
-            },            
-        ],
-        url:'#portfolio',
-        videoId:"-",
-        detail:
-        `
-            <p>El proyecto consiste en crear una armadura de cuero de tamaño real inspirado en el dragón <span class="bold">Rathalos<span> de la saga Monster Hunter.</p>
-            <img src="assets/images/Armor_Rathalos.jpg" alt="Rathalos" class="projectImgDetails">
-            <p>Para ello, partiendo de un trozo de cuero de vaca curtido, he recortado cada pieza siguiendo unos patrones, le he dado forma, he trazado el dibujo interno de cada pieza, lo he tintado y por último lo he montado con remaches.</p>
-            <img src="assets/images/Armor_Leather.jpg" alt="Cuero de vaca" class="projectImgDetails">
-            <img src="assets/images/Armor_Pieces.jpg" alt="Partes del casco" class="projectImgDetails">
-            Además del casco, he hecho 2 brazaletes para acompañar el conjunto. La próxima pieza seran las hombreras.          
-            <img src="assets/images/Armor_3.jpg" alt="Brazaletes" class="projectImgDetails">
-        `,
-        codeSourceUrl:'-',
-        detailIsDisplayed: false,
-    },
+    }
 ];
 

@@ -5,6 +5,10 @@ import { locale as english } from '../shared/i18n/en';
 import { locale as spanish } from '../shared/i18n/es';
 import { experiencesEs} from '../api/experiencesEs';
 import { experiencesEn} from '../api/experiencesEn';
+import { publicationsEs} from '../api/publicationsEs';
+import { publicationsEn} from '../api/publicationsEn';
+import { vgExperiencesEs} from '../api/vgExperiencesEs';
+import { vgExperiencesEn} from '../api/vgExperiencesEn';
 import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-curriculum-vitae',
@@ -14,6 +18,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class CurriculumVitaeComponent implements OnInit {
   experiences:any=experiencesEs;
+  publications:any=publicationsEs;
+  vgExperiences:any=vgExperiencesEs;
   planeIcon: any ;
   gameIcon:any;
   volleyBallIcon:any;
@@ -24,10 +30,14 @@ export class CurriculumVitaeComponent implements OnInit {
     this._translateService.onLangChange.subscribe(()=>{
       if(this._translateService.currentLang=="en"){
         this.experiences=experiencesEn;
+        this.publications=publicationsEn;
+        this.vgExperiences=vgExperiencesEn;
         this.cvLink="https://germiesqui.github.io/portfolioWebPage/assets/CV_GameDesign_2021__Ingles.pdf";
       }
       else{
         this.experiences=experiencesEs;
+        this.publications=publicationsEs;
+        this.vgExperiences=vgExperiencesEs;
         this.cvLink="https://germiesqui.github.io/portfolioWebPage/assets/CV_GameDesign_2021.pdf";
       }
     });
