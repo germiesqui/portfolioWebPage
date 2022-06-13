@@ -23,7 +23,7 @@ export class CurriculumVitaeComponent implements OnInit {
   planeIcon: any ;
   gameIcon:any;
   volleyBallIcon:any;
-  cvLink:any="https://germiesqui.github.io/portfolioWebPage/assets/CV_Game_Industry_2021.pdf";
+  cvLink:any="https://germiesqui.github.io/portfolioWebPage/assets/CV_Game_Industry_2022_Es.pdf";
 
   constructor(private _translationLoaderService: TranslationLoaderService,private _translateService: TranslateService) {
     this._translationLoaderService.loadTranslations(english, spanish);

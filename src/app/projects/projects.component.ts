@@ -7,6 +7,7 @@ import { projectsEs} from '../api/projectsEs';
 import {AfterViewInit, ChangeDetectorRef, ElementRef, OnDestroy, ViewChild} from '@angular/core';
 
 import { TranslateService } from '@ngx-translate/core';
+import { DomSanitizer } from '@angular/platform-browser';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -21,7 +22,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit, OnDestroy {
   videoWidth: number | undefined;
   videoHeight: number | undefined;
 
-  constructor(private _translationLoaderService: TranslationLoaderService,private _translateService: TranslateService, private _changeDetectorRef: ChangeDetectorRef) {
+  constructor(private _translationLoaderService: TranslationLoaderService,private _translateService: TranslateService, private _changeDetectorRef: ChangeDetectorRef, private sanitized: DomSanitizer) {
     this._translationLoaderService.loadTranslations(english, spanish);
     this._translateService.onLangChange.subscribe(()=>{
       if(this._translateService.currentLang=="en"){
@@ -31,6 +32,10 @@ export class ProjectsComponent implements OnInit, AfterViewInit, OnDestroy {
         this.projects=projectsEs;
       }
     });
+
+    this.projects.forEach(project => {
+      project.detail= this.sanitized.bypassSecurityTrustHtml(project.detail);
+    })
   }
 
   ngOnInit(): void {
@@ -40,7 +45,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit, OnDestroy {
   ngAfterViewInit(){
     console.log("after view init");
     this.onMouse("spiritCave-link", "spiritCave-img", "spiritCave");
-    this.onMouse("tsarsSecrets-link", "TsarsSecrets-img", "tsarsSecrets");
+    this.onMouse("tsarsSecrets-link", "TsarsSecrets-img", "tsarsSecret");
     this.venobox = $('.venobox');
     this.venobox.venobox();
 

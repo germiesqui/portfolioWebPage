@@ -51,3 +51,154 @@ li.active{
   padding-top: 20px;
 }
 
+.details{
+  display: flex;
+  flex-direction: column;
+}
+
+.mainSection{
+  text-align: center;
+}
+
+.title{
+  font-weight: 600;
+}
+
+.category{
+  height: 320px;
+}
+
+.cardBodyCustom{
+  padding-top: 60px;
+  position: relative;
+  height: 320px;
+}
+
+.cardDesc{
+  margin-top: 30px;
+  font-style: italic;
+}
+
+.cardBtn{
+  justify-content: center;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.topCategoriesCol{
+  align-self: end;
+  z-index: 1;
+}
+
+.bottomCategoriesCol{
+  align-self: baseline;
+}
+
+.cardImgContainer{
+  overflow: hidden;
+  height: 400px;
+  max-height: 400px;
+  position: relative;
+}
+
+.cardImg{
+  display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.cardImgSpecial{
+  height: inherit; 
+  width: auto; 
+  margin: 0 -40px;
+}
+
+.customRow{
+  margin: 30px 0;
+}
+
+.rectangleDecoration{
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: #425465;
+  margin: -150px -36px;
+  z-index: 0;
+}
+
+.textBtn{
+  border-bottom: 3px solid rgb(22, 59, 90);
+  display: inline-block;
+  width: 70px;
+}
+
+.sections{
+  display: flex;
+}
+
+.sectionImg{
+  width: 100%;
+  margin: 10px 0;
+}
+
+.sectionTitle{
+  font-size: 4rem;
+  color: white;
+  font-weight: 500;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  width: 130%;
+}
+
+.sectionDecoration{
+  position: absolute;
+  margin: -10px -36px;
+  height: 180px;
+  width: 100%;
+  background-color: #425465;
+  z-index: 0;
+}
+
+.sectionBody{
+  margin-top: 40px;
+  font-size: 1.05rem;
+}
+
+.imgCol{
+  align-self: center;
+  margin-top: 210px;
+}
+.imgCol2{
+  align-self: center;
+  margin-top: 100px;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.gameDesc{
+  font-style: italic;
+  font-size: larger;
+}
+
+section{
+  padding-top: 50px;
+}
+
+.gameLink{
+  display: inline-block;
+  align-self: center;
+}
+
+.finalRowBody{
+  text-align: center;
+}
