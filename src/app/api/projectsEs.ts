@@ -158,7 +158,7 @@ export const projectsEs = [
     {
         id:"spiritCave",
         name: "Spirit Cave",
-        functions: 'Level Designer, System Designer, QA',
+        functions: 'Level Designer, System Designer, Sound Designer, QA',
         images: [
             {
                 title:'Main Page',

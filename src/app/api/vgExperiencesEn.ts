@@ -13,14 +13,14 @@ export const vgExperiencesEn = [
         detailIsDisplayed: false,
     },
     {
-        title: "Game Designer",
+        title: "Game designer",
         company: "Spirit Cave",
         period: "Global Game Jam 2022",
         technologies: 'Unreal Engine, Perforce',
         missions: [
             "Level design.",
             "System design.",
-            "Sound design",
+            "Sound design.",
             "Prototyping with blueprints.",
             "QA"
         ],
