@@ -75,7 +75,7 @@ export const locale = {
             
         },
         'home': {
-            'iAmDeveloper': 'Yo soy game designer',
+            'iAmDeveloper': 'Game designer',
         },
         'projects': {
             'title': 'Proyectos',
