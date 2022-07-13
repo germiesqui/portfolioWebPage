@@ -10,7 +10,7 @@ export const locale = {
             'years': '-',
             'graduation': "Master en diseño de videojuegos",
             'myResearch': '-',
-            'researchDescription': "Desde pequeño, me he criado con videojuegos. Recuerdo que el primer juego que me pasé fue el Warcraft 3 y sentó las bases de mi amor por la fantasía.",
+            'researchDescription': "Desde pequeño, me he criado con videojuegos. Recuerdo que el primer juego que me pasé fue el Warcraft 3 y sentó las bases de mi amor por la fantasía. De esa semilla, surgió mi gusto por la lectura, las manualidades, el rol y un montón de cosas más.",
             'and':'-',
             'whyVideogames': "Los videojuegos te marcan, te enseñan lecciones de vida y te conectan con otras personas y, por eso mismo, decidí dedicarme al diseño de videojuegos.",
             'followMeOn':'Sigueme en',

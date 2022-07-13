@@ -10,7 +10,7 @@ export const locale = {
             'years': '-',
             'graduation': "Master's in Game Design",
             'myResearch': '-',
-            'researchDescription': "Ever since I was a kid, I have grown up with videogames. I remember the first game I played was Warcraft 3 and it laid the foundation for my love of fantasy.",
+            'researchDescription': "Since I was a kid, I grew up with videogames. I remember the first game I played was Warcraft 3 and it laid the foundation for my love of fantasy. From that seed, came my love for reading, crafts, tabletop rpg and a lot of other things.",
             'and':'-',
             'whyVideogames': "Videogames leave a mark on you, teach you life lessons and connect you with other people, and that's why I decided to become a game designer.",
             'followMeOn':'Follow me on',

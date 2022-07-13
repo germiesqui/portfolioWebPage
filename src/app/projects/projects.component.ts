@@ -44,7 +44,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngAfterViewInit(){
     console.log("after view init");
-    this.onMouse("spiritCave-link", "spiritCave-img", "spiritCave");
+    //this.onMouse("spiritCave-link", "spiritCave-img", "spiritCave");
     this.onMouse("tsarsSecrets-link", "TsarsSecrets-img", "tsarsSecret");
     this.venobox = $('.venobox');
     this.venobox.venobox();
