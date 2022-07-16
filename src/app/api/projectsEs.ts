@@ -15,7 +15,7 @@ export const projectsEs = [
         detail:
         `
         <div class="details">
-            <p class="gameLink">Vista nuestra pagina web en <strong><a href="https://otterworldsgames.itch.io/the-tsars-secret">https://otterworldsgames.itch.io/the-tsars-secret</a></strong></p>
+            <p class="gameLink">Vista nuestra página de Steam en <strong><a href="https://store.steampowered.com/app/2079410/The_Tsars_Secret/">https://store.steampowered.com/app/2079410/The_Tsars_Secret/</a></strong></p>
             <p class="gameDesc">The Tsar's Secret es un juego de sigilo en 2,5D que consiste en infiltrarse en el palacio del zar. No puedes contraatacar, así que la única manera de tener éxito es ser más astuto que tus enemigos y avanzar sin ser descubierto. Utiliza poderes mágicos para cegar o causar sordera a los guardias de palacio, colándote detrás de ellos y completando tu misión.</p>
             <section class="mainSection">
                 <h2 class="title">Mi contribución al proyecto</h2>
@@ -84,10 +84,10 @@ export const projectsEs = [
                             <li>Desde la sala anterior entramos al pasillo en modo Tenebris.</li>
                             <li>Desde la sala anterior entramos al pasillo en modo Silentium.</li>
                             <li>Pasillo oculto que te permite saltarte parte de la sala. Al salir en modo Tenebris de la sala anterior, tu propia onda ilumina dicho pasillo.</li>
-                            <li>Pasillo largo que permite ir analizando el puzle de la siguiente sala mientras avanzas. En Tenebris puedes analizar los enemigos, sus rutas y usar el reloj de guia.</li>
-                            <li>6. 7. El motiv de esta sala es enfrentarte a enemigos estaticos que sotan sobre si mismos mirando hacia los lados. Aprovechando las esquinas, debes avanzar en Silentium cuando mira para el otro lado, cambiarte a Tenebris para que no te vea cuando se gire, y volverte a cambiar a Silentium para avanzar por su lado.</li>
-                            <li>Reloj como guia visual y sonora en ambos modos para indicarte el camino correcto.</li>
-                            <li>La distancia del enemigo estatico a la pared es muy corta para pasar andando en modo Tenebris. El jugador debe timear al otro enemigo que patrulla para ir por el balcon de la derecha, cambiarse a Tenebris y quedarse quieto para que no le pille, y avanzar una vez el enemigo haya continuado con su patrulla.</li>
+                            <li>Pasillo largo que permite ir analizando el puzle de la siguiente sala mientras avanzas. En Tenebris puedes analizar los enemigos, sus rutas y usar el reloj de guía.</li>
+                            <li>6. 7. El motiv de esta sala es enfrentarte a enemigos estaticos que rotan sobre si mismos mirando hacia los lados. Aprovechando las esquinas, debes avanzar en Silentium cuando mira para el otro lado, cambiarte a Tenebris para que no te vea cuando se gire, y volverte a cambiar a Silentium para avanzar por su lado.</li>
+                            <li>Reloj como guía visual y sonora en ambos modos para indicarte el camino correcto.</li>
+                            <li>La distancia del enemigo estatico a la pared es muy corta para pasar andando en modo Tenebris. El jugador debe calcular el tiempo que tarda el enemigo que patrulla para ir por el balcón de la derecha, cambiarse a Tenebris y quedarse quieto para que no le pille, y avanzar una vez el enemigo haya continuado con su patrulla.</li>
                         </ol>
                     </div>
                     
@@ -128,7 +128,7 @@ export const projectsEs = [
                         <p>El juego cuenta con dos modos: Silentium y Tenebris. Cada uno cumple una funcion especial a la hora de reslover los puzles.</p>
                         <ul>
                             <li><span class="bold">Silentium</span> nos permite ver el nivel con claridad, dónde están exactamente los enemigos, hacia donde estan mirando y sirve de recurso familiar para adaptarse al juego.<br/>Pero tiene un problema, su alcance es corto y no nos permite ver a través de las paredes.</li>
-                            <li><span class="bold">Tenebris</span> funciona como una antitesis del otro modo. Nos permite "ver" a gran distancia, a través de las paredes pudiendo así analizar el puzle entero y encontrar los relojes que sirven de guia. Además nos permite pasar despercividos en las narices de un enemigo, siempre y cuando no emitamos ruido.<br/>Su contrapartida, como podemos ver en las imágenes, es que la estructura del nivel no es tan clara como en Silentium y tenemos que fijarnos en el contorno de los objetos que dibujan las ondas para guiarnos.</li>
+                            <li><span class="bold">Tenebris</span> funciona como una antitesis del otro modo. Nos permite "ver" a gran distancia, a través de las paredes pudiendo así analizar el puzle entero y encontrar los relojes que sirven de guía. Además nos permite pasar despercividos en las narices de un enemigo, siempre y cuando no emitamos ruido.<br/>Su contrapartida, como podemos ver en las imágenes, es que la estructura del nivel no es tan clara como en Silentium y tenemos que fijarnos en el contorno de los objetos que dibujan las ondas para guiarnos.</li>
                         </ul>
                         <p>Este cambio de modo afecta también a los enemigos, que cambian su modo de detección segun en que modo estés.</p>
                     </div>
@@ -152,7 +152,8 @@ export const projectsEs = [
             </section>
         </div>
         `,
-        codeSourceUrl:'https://otterworldsgames.itch.io/the-tsars-secret',
+        codeSourceUrl:'https://store.steampowered.com/app/2079410/The_Tsars_Secret/',
+        hasSteam: true,
         detailIsDisplayed: false,
     },
     {
@@ -194,6 +195,7 @@ export const projectsEs = [
         `,
         codeSourceUrl:'https://germiesqui.itch.io/spirit-cave',
         detailIsDisplayed: false,
+        hasSteam: false,
     }
 ];
 

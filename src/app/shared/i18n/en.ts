@@ -79,7 +79,8 @@ export const locale = {
         'projects': {
             'title': 'Portfolio',
             'projectDetail':'Project detail',
-            'sourceCode':'Itch.io',
+            'Itchio':'Itch.io',
+            'Steam':'Steam',
             'technologiesTitle':'Functions',
         },
         'references': {

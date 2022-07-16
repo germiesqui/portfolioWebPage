@@ -15,7 +15,7 @@ export const projectsEn = [
         detail:
         `
         <div class="details">
-            <p class="gameLink">Check out our website at <strong><a href="https://otterworldsgames.itch.io/the-tsars-secret">https://otterworldsgames.itch.io/the-tsars-secret</a></strong></p>
+            <p class="gameLink">Check out our Steam page at <strong><a href="https://store.steampowered.com/app/2079410/The_Tsars_Secret/">https://store.steampowered.com/app/2079410/The_Tsars_Secret/</a></strong></p>
             <p class="gameDesc">The Tsar’s Secret is a 2.5D stealth game about infiltrating the Tsar’s palace. You can’t fight back, so the only way for succeeding is to outsmart your enemies and remain undiscovered. Use magic powers to blind or cause deafness in the palace guards, sneaking behind them and complete your mission.</p>
             <section class="mainSection">
                 <h2 class="title">My contribution to the project</h2>
@@ -87,7 +87,7 @@ export const projectsEn = [
                             <li>Long corridor that allows you to analyze the puzzle of the next room as you advance. In Tenebris you can analyze the enemies, their routes and use the clock as a guide.</li>
                             <li>6. 7. The motivation of this room is to confront static enemies that stand on themselves looking to the sides. Taking advantage of the corners, you must advance in Silentium when he looks the other way, switch to Tenebris so he doesn't see you when he turns, and switch back to Silentium to advance on his side.</li>
                             <li>Clock as a visual and audible guide in both modes to show you the right way.</li>
-                            <li>The distance from the stationary enemy to the wall is too short to walk past in Tenebris mode. The player must timed the other patrolling enemy to go through the balcony on the right, switch to Tenebris and stay still so he doesn't get caught, and move forward once the enemy has continued his patrol.</li>
+                            <li>The distance from the stationary enemy to the wall is too short to walk past in Tenebris mode. The player must time the other patrolling enemy to go through the balcony on the right, switch to Tenebris and stay still so he doesn't get caught, and move forward once the enemy has continued his patrol.</li>
                         </ol>
                     </div>
                     
@@ -152,7 +152,8 @@ export const projectsEn = [
             </section>
         </div>
         `,
-        codeSourceUrl:'https://otterworldsgames.itch.io/the-tsars-secret',
+        codeSourceUrl:'https://store.steampowered.com/app/2079410/The_Tsars_Secret/',
+        hasSteam: true,
         detailIsDisplayed: false,
     },
     {
@@ -192,6 +193,7 @@ export const projectsEn = [
             measuring the distance of the beam and based on that we determine if it had stopped falling or not and reprogram all the lateral movement the roof to work as programmed.</p>
         `,
         codeSourceUrl:'https://germiesqui.itch.io/spirit-cave',
+        hasSteam: false,
         detailIsDisplayed: false,
     }
 ];

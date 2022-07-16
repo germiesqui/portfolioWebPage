@@ -80,7 +80,8 @@ export const locale = {
         'projects': {
             'title': 'Proyectos',
             'projectDetail':'Detalles',
-            'sourceCode':'Itch.io',
+            'Itchio':'Itch.io',
+            'Steam':'Steam',
             'technologiesTitle':'Funciones',
         },
         'references': {
