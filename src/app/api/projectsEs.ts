@@ -11,7 +11,7 @@ export const projectsEs = [
             
         ],
         url:'https://otterworldsgames.itch.io/the-tsars-secret',
-        videoId:"_MYIXK6e_es",
+        videoId:"fps61jKr3bY",
         detail:
         `
         <div class="details">
