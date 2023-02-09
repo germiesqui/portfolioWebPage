@@ -1,5 +1,15 @@
 export const experiencesEs = [
     {
+        title: "QA de Gameplay",
+        company: 'Saber Interactive Madrid',
+        period: "2022 - Actual",
+        missions: [
+            "Balanceo de sistemas en conjunción con el departamento de diseño.",
+            "Analisis de rendimiento en todas las plataformas.",
+        ],
+        detailIsDisplayed: false,
+    },
+    {
         title: "Desarollador Móvil y Desarrollador Web fullstack",
         company: 'Armadillo Amarillo',
         period: "2020 - 2021",

@@ -1,5 +1,15 @@
 export const experiencesEn = [
     {
+        title: "QA",
+        company: 'Saber Interactive Madrid',
+        period: "2022 - Today",
+        missions: [
+            "System balance with Design team.",
+            "Performance analysis in all platforms.",
+        ],
+        detailIsDisplayed: false,
+    },
+    {
         title: "Mobile and fullstack web development",
         company: 'Armadillo Amarillo',
         period: "2020 - 2021",
