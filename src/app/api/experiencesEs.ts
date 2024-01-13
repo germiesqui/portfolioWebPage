@@ -1,11 +1,13 @@
 export const experiencesEs = [
     {
-        title: "QA de Gameplay",
+        title: "QA Tester",
         company: 'Saber Interactive Madrid',
         period: "2022 - Actual",
         missions: [
             "Balanceo de sistemas en conjunción con el departamento de diseño.",
-            "Analisis de rendimiento en todas las plataformas.",
+            "Diseño iterativo de niveles y sensación de juego en conjunción con el departamento de diseño.",
+            "Gestion de equipos.",
+            "Análisis de rendimiento en todas las plataformas."
         ],
         detailIsDisplayed: false,
     },

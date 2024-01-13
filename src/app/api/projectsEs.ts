@@ -157,45 +157,74 @@ export const projectsEs = [
         detailIsDisplayed: false,
     },
     {
-        id:"spiritCave",
-        name: "Spirit Cave",
-        functions: 'Level Designer, System Designer, Sound Designer, QA',
+        id:"electraProject",
+        name: "Proyecto Electra (WIP)",
+        functions: 'Diseñador, Programador',
         images: [
             {
-                title:'Main Page',
-                src: "assets/images/SpiritCave_MainPage.png",
+                title:"Project Electra Main Page",
+                src:   "assets/images/WIP_Banner.png",
             },
-            {
-                title:'Screenshot Personaje Fantasma',
-                src:"assets/images/SpiritCave_2.jpg",
-            },
-            {
-                title:'Screenshot Personaje',
-                src: "assets/images/SpiritCave_3.jpg",
-            },
+            
         ],
-        url: "https://germiesqui.itch.io/spirit-cave",
-        videoId:"gpjd0Jl6Sik",
+        url:'',
+        videoId:"",
         detail:
         `
-            <p>Juego desarrollado para la GGJ 2022.</p>
-            <p class="italic">"Has sido maldecido y encerrado en las profundidades de la Cueva de los Lamentos. Gracias a la maldición puedes escapar de tu forma terrenal y liberar tu alma. Ahora debes escapar."</p>
-            <img src="assets/images/SpiritCave_3.jpg" alt="Screenshot del personaje" class="projectImgDetails">
-            <p>La temática de la Game Jam era <span class="bold">dualidad</span>. Nos decantamos por usar una mezcla entre narrativa y mecánicas para representar esta idea. 
-            En el juego controlamos a nuestro protagonista, el cual solo puede caminar hacia adelante y hacia atrás. Para poder sortear los obstáculos del mapa, como son las diferencias de nivel, saltos y enemigos, 
-            tiene la habilidad de transformarse en un fantasma. 
-            Esta habilidad invierte el eje de gravedad y le permite caminar por el techo o, con suficiente habilidad, volar por algunas zonas.</p>
-            <img src="assets/images/SpiritCave_TileMap.jpg" alt="vista en desarrollo del TileMap" class="projectImgDetails">
-            <p>Como tecnología escogimos UE4 dado que era el único motor que controlabamos todos los integrantes del grupo. Además, lo usamos para aprender a manejar los mapas y elementos en 2D de unreal usando TileMaps.</p>
-            <img src="assets/images/SpiritCave_2.jpg" alt="Screenshot del personaje fantasma" class="projectImgDetails">
-            <p>Uno de los mayores retos que afrontamos desde el lado del diseño y la programción fue que, por limitaciones del motor, al invertir el eje de gravedad unreal no detecta que dejas de "caer" 
-            hacia arriba cuando llegas al techo, por lo que andar se hacía imposible dado que no habia rozamiento con el suelo (techo). 
-            Al final, pudimos solventarlo lanzando un rayo que chocase contra el techo, midiendo la distancia de dicho rayo y, en base a eso, determinar nosotros si habia dejado de caer o no y reprogramar todo el movimiento lateral 
-            del techo para que funcione acorde a lo programado.</p>
+        <div class="details">
+            <p class="gameDesc">El proyecto Electra es un juego en desarrollo que pretende combinar el combate de los deckbuilders como Slay the Spire e Inscryption con la arquitectura de un RPG clásico y un sistema de gestión de recursos para el deck.</p>
+            <section class="mainSection">
+                <h2 class="title">Mi contribución al proyecto</h2>
+                <p class="subtitle">Actualmente somos 2 personas en el proyecto y ambos nos dedicamos al diseño y la programación del mismo.</p>
+                <div class="categories">
+                    <div class="row customRow">
+                        <div class="col-lg-4 topCategoriesCol">
+                            <div class="card bg-white shadow-lg category">
+                                <div class="card-body cardBodyCustom">
+                                    <h3 class="cardTitle">Documento de Concepto</h3>
+                                    <p class="cardDesc">Documento inicial donde presento brevemente la idea.</p>
+                                    <a href="https://germiesqui.github.io/portfolioWebPage/assets/ProjectElectra_Concept.pdf"><button class="btn cardBtn"><span class="textBtn">A B R I R</span></button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card shadow-lg cardImgContainer">
+                            <img style="height: 100%;" src="assets/images/ProjectElectra_Cover.png" class="cardImg">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 topCategoriesCol">
+                            <div class="card bg-white shadow-lg category">
+                                <div class="card-body cardBodyCustom">
+                                    <h3 class="cardTitle">Diseño de combate</h3>
+                                    <p class="cardDesc">Uno de los primeros puntos ha sido definir el combate del juego.</p>
+                                    <a href="#PECombatDesign"><button class="btn cardBtn"><span class="textBtn">M O R E</span></button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sections evenSection" id="PECombatDesign">
+            <div class="sectionDecoration"></div>
+                <div class="col-lg-12">
+                    <h3 class="title sectionTitle">Diseño de Combate</h3>
+                    <div class="sectionBody finalRowBody">
+                        <p>El combate pretende darle una pequeña vuelta al esquema de combate de Slay the Spire. Mientras que <b>en el Slay the Spire la estrategia se centra en optimizar el turno actual</b> con las cartas que tienes disponibles y sabiendo lo que el enemigo va a relaizar el turno siguiente, <b>nuestro juego incorporará una estrategia transversal de todo el combate.</b></p>
+                        <p>Para ello haremos que cuentes con 2 mazos. Estos mazos funcionan de manera similar a los de Inscryption.</p>
+                        <ul>
+                            <li><p>Tendremos un <b>mazo basico</b> que nos permitira generar recursos de manera inmediata y recompensaremos al jugador a medio plazo si se usa dicha carta de manera optima. (<span class="italic">Ej: Tras usar esta carta, obtines 2 recurso extra si en el proximo turno,el enemigo te inflinge daño.</span>)</p></li>
+                            <li><p>Contaremos con otro <b>mazo de artefactos</b>. Este mazo contendra las acciones interesantes del jugador que serviran principalmente para atacar o protegerse. Estas cartas consumen recurso que NO se regenrea automaticamente como en Slay the Spire.</p></li>
+                        </ul>
+                        <p>Además, las cartas artefacto son de un solo uso. De esta manera se genera una dinámica de optimizar el uso de dichas cartas y genera un loop de creación de cartas tras el combate que se une con el sistema de gestión de recursos.</p>
+                        <p>La intención es que el jugador cuente con la información de sus cartas en mano, la probabilidad de las cartas que le quedan por robar y su conocimiento sobre las acciones enemigas para formar una estrategia a largo plazo (estrategia de combate).</p>
+                    </div>
+                </div>
+            </section>
+        </div>
         `,
-        codeSourceUrl:'https://germiesqui.itch.io/spirit-cave',
-        detailIsDisplayed: false,
+        codeSourceUrl:'',
         hasSteam: false,
+        detailIsDisplayed: false,
     }
 ];
 

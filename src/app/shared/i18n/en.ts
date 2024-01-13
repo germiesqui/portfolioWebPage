@@ -39,7 +39,7 @@ export const locale = {
             'hobby': 'Hobbies',
             'hobbyDetails': 'Videogames, Leatherworking, Electronics, 3D Modeling',
             'boardGames': 'Dungeon Master',
-            'boardGamesDetails': 'in DnD for 3 years',
+            'boardGamesDetails': 'in DnD for 5 years',
             'languages': 'Languages',
             'fluent': 'Native',
             'goodLevel': 'Fluent written and spoken',
@@ -77,7 +77,8 @@ export const locale = {
             'iAmDeveloper': 'I am game designer',
         },
         'projects': {
-            'title': 'Portfolio',
+            'title': 'Projects',
+            'subcategory': 'Game Jams',
             'projectDetail':'Project detail',
             'Itchio':'Itch.io',
             'Steam':'Steam',

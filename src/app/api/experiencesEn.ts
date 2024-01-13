@@ -1,10 +1,12 @@
 export const experiencesEn = [
     {
-        title: "QA",
+        title: "QA Tester",
         company: 'Saber Interactive Madrid',
         period: "2022 - Today",
         missions: [
             "System balance with Design team.",
+            "Iterative level and game feel design with Design team.",
+            "Team management",
             "Performance analysis in all platforms.",
         ],
         detailIsDisplayed: false,

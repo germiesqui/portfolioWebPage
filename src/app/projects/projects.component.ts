@@ -4,6 +4,8 @@ import { locale as english } from '../shared/i18n/en';
 import { locale as spanish } from '../shared/i18n/es';
 import { projectsEn} from '../api/projectsEn';
 import { projectsEs} from '../api/projectsEs';
+import { gamejamsEn} from '../api/gamejamsEn';
+import { gamejamsEs} from '../api/gamejamsEs';
 import {AfterViewInit, ChangeDetectorRef, ElementRef, OnDestroy, ViewChild} from '@angular/core';
 
 import { TranslateService } from '@ngx-translate/core';
@@ -16,6 +18,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class ProjectsComponent implements OnInit, AfterViewInit, OnDestroy {
   projects:any[]=projectsEs;
+  gamejams:any[]=gamejamsEs;
   venobox: any;
 
   @ViewChild('myYouTubePlayer') myYouTubePlayer: ElementRef<HTMLDivElement>;
@@ -27,9 +30,11 @@ export class ProjectsComponent implements OnInit, AfterViewInit, OnDestroy {
     this._translateService.onLangChange.subscribe(()=>{
       if(this._translateService.currentLang=="en"){
         this.projects=projectsEn;
+        this.gamejams=gamejamsEn;
       }
       else{
         this.projects=projectsEs;
+        this.gamejams=gamejamsEs;
       }
     });
 

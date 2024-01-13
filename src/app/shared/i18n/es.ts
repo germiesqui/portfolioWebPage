@@ -39,7 +39,7 @@ export const locale = {
             'hobby': 'Hobbies',
             'hobbyDetails': 'Videojuegos, Talabarteria, Electronica, Modelado 3D',
             'boardGames': 'Dungeon Master',
-            'boardGamesDetails': 'en DnD durante 3 años',
+            'boardGamesDetails': 'en DnD durante 5 años',
             'languages': 'Idiomas',
             'fluent': 'Nativo',
             'goodLevel': 'Fluido hablado y escrito',
@@ -79,6 +79,7 @@ export const locale = {
         },
         'projects': {
             'title': 'Proyectos',
+            'subcategory': 'Game Jams',
             'projectDetail':'Detalles',
             'Itchio':'Itch.io',
             'Steam':'Steam',
